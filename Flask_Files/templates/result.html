@@ -1,0 +1,48 @@
+<html>
+
+<title>Display Data </title>
+<style>
+body
+{
+	color: black;
+}
+table,th{
+  border: 5px solid black;
+}
+td{
+	border: 1px solid black;
+}
+</style>
+
+<body style="background-color:lightgrey;">
+
+	<table style="width:100%" class="center">
+	<caption><h1><u>List of Hearing Scheduled</u><h1></caption><br/>
+	<tr>
+	<th>SL NO</th>
+	<th>File NO</th>
+	<th>Name of Appellant/complainant</th>
+	<th>IC Name </th>
+	<th>Public Authority</th>
+	<th>Date of Hearing</th>
+	<th>Time of Hearning</th>
+	<th>Bench Details</th>
+	<th>Action</th>
+	</tr>
+	{% for data in todos %}
+	<tr>
+	<td>{{ data["SL NO"] }}</td>
+	<td>{{ data["FILE NO"] }}</td>
+	<td>{{ data["Name Of Appellant/Complainant"] }}</td>
+	<td>{{ data["IC Name"] }}</td>
+	<td>{{ data["Public Authority"] }}</td>
+	<td>{{ data["Date of Hearing"] }}</td>
+	<td>{{ data["Time of Hearing"] }}</td>
+	<td>{{ data["Bench Details"] }}</td>
+	<td>{{ data["Action"] }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+</body>		
+</html
