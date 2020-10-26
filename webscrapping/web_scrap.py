@@ -153,7 +153,7 @@ class opsDB:
 
 			mydb=myclient["mydatabase"]
 
-			mycol=mydb["webcollection"]
+			mycol=mydb["webcollection1"]
 
 
 			#inserting the data
