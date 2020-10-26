@@ -3,8 +3,8 @@
 
 Install the below libraries:-
 '''
-pip install selenium
-pip install flask
+pip install selenium,
+pip install flask,
 pip install webdriver_manager
 '''
 
